@@ -18,11 +18,11 @@ var studente = {
   'eta': 32,
 }
 
-console.log('Proprietà studente:');
 
 // ciclo oggetto studente per stampare proprietà
+console.log('Proprietà studente:');
 for(var key in studente){
-  console.log('proprietà: ' + key + ', valore: ' + studente[key]);
+  console.log('La proprietà: ' + key + ', ha valore: ' + studente[key]);
 }
 
 // 2° parte
@@ -41,13 +41,12 @@ var arrayStudenti = [
   },
 ];
 
-console.log('Proprietà arrayStudenti:');
-
 // ciclo arrayStudenti
+console.log('Proprietà arrayStudenti:');
 for(var x = 0; x < arrayStudenti.length; x++){
   // ad ogni incremento apro ciclo for in che stampa proprietà oggetto
   for(var key2 in arrayStudenti[x]){
-    console.log('proprietà: ' + key2 + ', valore: ' + arrayStudenti[x][key2])
+    console.log('La proprietà: ' + key2 + ', ha valore: ' + arrayStudenti[x][key2])
   }
 }
 
@@ -79,8 +78,8 @@ studenteUtente.eta = eta;
 // pusho il nuovo oggetto nell' arrayStudenti
 arrayStudenti.push(studenteUtente);
 
-console.log('Proprietà Studente scelto dall\' utente:');
 // ciclo studente utente e stampo proprietà:
+console.log('Studente scelto dall\' utente:');
 for(var key3 in studenteUtente){
   console.log('proprietà: ' + key3 + ', valore: ' + studenteUtente[key3])
 }
